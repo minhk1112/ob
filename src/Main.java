@@ -7,19 +7,20 @@ public class Main {
 
         List<String> frontCategories = Arrays.asList("한식", "양식", "고깃집", "일식", "중식");
         List<List<String>> frontStores = Arrays.asList(
-                Arrays.asList("기울어진 뚝배기", "왕뚝배기", "통닭"),
-                Arrays.asList("맘스터치", "롯데리아", "프랭크버거", "피자헛", "서브웨이"),
-                Arrays.asList("베이스캠프", "주먹구이", "진원소우", ""),
-                Arrays.asList("", "길동우동", ""),
-                Arrays.asList("각", "마라탕")
+                Arrays.asList("기울어진 뚝배기", "왕뚝배기", "통닭", "25시 해장국"),
+                Arrays.asList("맘스터치", "롯데리아", "프랭크버거", "피자헛", "서브웨이", "킹스햄버거"),
+                Arrays.asList("베이스캠프", "주먹구이", "진원소우", "콩가루삼겹살", "삼미닭갈비", "뚜껑댁", "장군집"),
+                Arrays.asList("다누끼", "길동우동", "아지트"),
+                Arrays.asList("이난짬뽕", "천미마라탕")
         );
 
-        List<String> backCategories = Arrays.asList("한식", "양식", "중식", "일식");
+        List<String> backCategories = Arrays.asList("한식", "양식", "중식", "일식", "분식");
         List<List<String>> backStores = Arrays.asList(
-                Arrays.asList("성진식당", "우암골", "청주수육국밥", "오로지", ""),
-                Arrays.asList("믹스", "면식당", "맘스터치", "버거운버거"),
+                Arrays.asList("성진식당", "우암골", "청주수육국밥", "오로지", "인생찌개", "유가네닭갈비", "국가대표", "부활", "얼큰칼국수", "청대불고기"),
+                Arrays.asList("믹스", "면식당", "맘스터치", "버거운버거", "반올림피자"),
                 Arrays.asList("마라퀸", "짬뽕의 맛"),
-                Arrays.asList("봉득식당", "한신우동", "")
+                Arrays.asList("봉득식당", "한신우동"),
+                Arrays.asList("쇼킹", "수암정")
         );
 
         String selectedGate;
@@ -27,7 +28,7 @@ public class Main {
         List<List<String>> selectedStores = null;
 
         while (true) {
-            System.out.println("==== 학식 룰렛 ====");
+            System.out.println("==== 식사 메뉴 룰렛 ====");
             System.out.print("정문 또는 중문을 선택하세요: ");
             String input = scanner.nextLine().trim();
 
@@ -47,7 +48,7 @@ public class Main {
         }
 
         System.out.println("룰렛을 돌리는 중...");
-        Thread.sleep(1000);
+        Thread.sleep(300);
         System.out.println("🎯 " + selectedGate + " 선택됨!");
 
         Thread.sleep(1000);
