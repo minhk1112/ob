@@ -19,7 +19,7 @@ public class Main {
                 Arrays.asList("성진식당", "우암골", "청주수육국밥", "오로지", "인생찌개", "유가네닭갈비", "국가대표", "부활", "얼큰칼국수", "청대불고기"),
                 Arrays.asList("믹스", "면식당", "맘스터치", "버거운버거", "반올림피자"),
                 Arrays.asList("마라퀸", "짬뽕의 맛"),
-                Arrays.asList("봉득식당", "한신우동"),
+                Arrays.asList("봉득식당", "한신우동", "자연을 담은 돈까스"),
                 Arrays.asList("쇼킹", "수암정")
         );
 
@@ -47,25 +47,25 @@ public class Main {
             }
         }
 
-        System.out.println("룰렛을 돌리는 중...");
+        System.out.println("룰렛을 돌리는 중...⏱\uFE0F");
         Thread.sleep(300);
         System.out.println("🎯 " + selectedGate + " 선택됨!");
 
         Thread.sleep(1000);
-        System.out.println("음식 종류를 무작위로 선택합니다...");
+        System.out.println("음식 종류를 무작위로 선택합니다...\uD83C\uDF72");
         Thread.sleep(1000);
 
         int categoryIndex = random.nextInt(selectedCategories.size());
         String selectedCategory = selectedCategories.get(categoryIndex);
-        System.out.println("선택된 음식 종류는 " + selectedCategory + "입니다!");
+        System.out.println("선택된 음식 종류는 " + selectedCategory + "입니다!🎯");
 
         Thread.sleep(1000);
-        System.out.println("해당 음식 종류의 가게 중 하나를 선택합니다...");
+        System.out.println("해당 음식 종류의 가게 중 하나를 선택합니다...⏱\uFE0F");
         Thread.sleep(1000);
 
         List<String> storeList = selectedStores.get(categoryIndex);
         String selectedStore = storeList.get(random.nextInt(storeList.size()));
-        System.out.println("오늘의 점심은 " + selectedStore + "에서 어떤가요?");
+        System.out.println("오늘의 점심은 " + selectedStore + "에서 어떤가요?\uD83D\uDE09");
 
         scanner.close();
     }
