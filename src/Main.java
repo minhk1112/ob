@@ -11,8 +11,7 @@ public class Main {
                 Arrays.asList("맘스터치", "롯데리아", "프랭크버거", "피자헛", "서브웨이", "킹스햄버거"),
                 Arrays.asList("베이스캠프", "주먹구이", "진원소우", "콩가루삼겹살", "삼미닭갈비", "뚜껑댁", "장군집"),
                 Arrays.asList("다누끼", "길동우동", "아지트"),
-                Arrays.asList("이난짬뽕", "천미마라탕")
-        );
+                Arrays.asList("이난짬뽕", "천미마라탕"));
 
         List<String> backCategories = Arrays.asList("한식", "양식", "중식", "일식", "분식");
         List<List<String>> backStores = Arrays.asList(
@@ -20,8 +19,7 @@ public class Main {
                 Arrays.asList("믹스", "면식당", "맘스터치", "버거운버거", "반올림피자"),
                 Arrays.asList("마라퀸", "짬뽕의 맛"),
                 Arrays.asList("봉득식당", "한신우동", "자연을 담은 돈까스"),
-                Arrays.asList("쇼킹", "수암정")
-        );
+                Arrays.asList("쇼킹", "수암정"));
 
         String selectedGate;
         List<String> selectedCategories = null;
